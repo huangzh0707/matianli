@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>secondary_page</title>
+</head>
+<body>
+    <h1>{{ company.company }}</h1>
+    {% for profile in company.profile_set.all %}
+        <ul>{{ profile.location }}</ul>
+    {% endfor %}
+</body>
+</html>

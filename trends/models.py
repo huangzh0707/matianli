@@ -11,5 +11,5 @@ class TopList(models.Model):
     date = models.DateField('funding date')
 
 class Profile(models.Model):
-    name = models.ForeignKey(TopList, on_delete=models.CASCADE)
+    toplist = models.ForeignKey(TopList, on_delete=models.CASCADE)
     location = models.CharField(max_length=200)
