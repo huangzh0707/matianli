@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>麻田里</title>
+</head>
+<body>
+    <p>麻田里商业数据</p>
+    {% if companies %}
+        {% for company in companies %}
+            <ul><a>{{ company.company}}</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ${{ company.amount }}M &nbsp&nbsp Series &nbsp{{ company.rounds }}</ul>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
